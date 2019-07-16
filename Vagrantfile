@@ -70,6 +70,6 @@ Vagrant.configure("2") do |config|
     sudo apt-get install vim git -y
     sudo apt-get install curl -y
     sudo apt-get install cmake libssl-dev -y
-    curl https://sh.rustup.rs -sSf | sh -y
+    curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain nightly -y
   SHELL
 end
